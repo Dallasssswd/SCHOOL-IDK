@@ -1,1 +1,57 @@
+:root {
+    --primary-color: #2c3e50; /* Navy blue */
+    --secondary-color: #1abc9c; /* Turquoise */
+    --text-color: #2c3e50;
+    --background-color: #ecf0f1; /* Light gray */
+    --dark-text-color: #ecf0f1; /* Light gray */
+    --dark-background-color: #2c3e50; /* Navy blue */
+}
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+button {
+    background: var(--secondary-color);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darken(var(--secondary-color), 10%);
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.dark-mode {
+    color: var(--dark-text-color);
+    background-color: var(--dark-background-color);
+}
